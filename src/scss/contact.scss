@@ -1,0 +1,27 @@
+.contact {
+    min-width: 288px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px 88px 16px;
+    background-color: #DBEAF7;
+    &__heading {
+        font-size: 36px;
+        text-align: center;
+        color: #234361;
+        margin-bottom: 32px;
+    }
+    &__article {
+        color: #234361;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 56px;
+    }
+    &__media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px 64px 112px 64px;
+    }
+    &__mail {}
+}

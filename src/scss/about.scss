@@ -1,0 +1,58 @@
+.about {
+    padding: 16px;
+    display: block;
+    &__article--contact {
+        background-color: #4da8ff;
+        color: #ffffff;
+        height: 48px;
+        border-radius: 64px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        //styleName: TextBold;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px 24px 4px 24px;
+    }
+    &__article--heading {
+        line-height: 32px;
+        font-size: 16px;
+        font-style: normal;
+        color: #234361;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__article--paragraph {
+        line-height: 32px;
+        font-size: 16px;
+        font-style: normal;
+        color: #425a70;
+        text-align: center;
+    }
+    &__image {
+        box-sizing: content-box;
+        width: 96px;
+        height: 96px;
+        margin: 98px 112px 40px 112px;
+        border-radius: 50%;
+        border: 16px solid #f6f9fd;
+    }
+    &__image--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__picture {
+        display: none;
+    }
+}
+
+.link {
+    color: #4da8ff;
+    text-decoration: none;
+}
