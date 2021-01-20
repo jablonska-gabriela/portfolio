@@ -1,58 +1,146 @@
-.about {
-    padding: 16px;
-    display: block;
-    &__article--contact {
-        background-color: #4da8ff;
-        color: #ffffff;
-        height: 48px;
-        border-radius: 64px;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        //styleName: TextBold;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0em;
-        text-align: center;
-        text-decoration: none;
-        padding: 0px 24px 4px 24px;
+    @media screen and (max-width: 1023px) {
+        .about {
+            padding: 16px;
+            display: block;
+            &__article--contact {
+                background-color: #4da8ff;
+                color: #ffffff;
+                height: 48px;
+                border-radius: 64px;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                //styleName: TextBold;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 0em;
+                text-align: center;
+                text-decoration: none;
+                padding: 0px 24px 4px 24px;
+            }
+            &__article--heading {
+                line-height: 32px;
+                font-size: 16px;
+                font-style: normal;
+                color: #234361;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            &__article--paragraph {
+                line-height: 32px;
+                font-size: 16px;
+                font-style: normal;
+                color: #425a70;
+                text-align: center;
+            }
+            &__article--image {
+                box-sizing: content-box;
+                width: 96px;
+                height: 96px;
+                margin: 98px 112px 40px 112px;
+                border-radius: 50%;
+                border: 16px solid #f6f9fd;
+            }
+            &__image--container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &__article--picture {
+                display: none;
+            }
+        }
+        .link {
+            color: #4da8ff;
+            text-decoration: none;
+        }
     }
-    &__article--heading {
-        line-height: 32px;
-        font-size: 16px;
-        font-style: normal;
-        color: #234361;
-        text-align: center;
-        margin-bottom: 16px;
+    
+    @media screen and (min-width: 1023px) {
+        .about {
+            height: 868px;
+            margin: 80px 229px 188px 229px;
+            &__article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 982px;
+                min-height: 300px;
+                text-align: center;
+                &__article:before {
+                    content: url(../assets/img/{.png);
+                    background-image: url(../assets/img/{.png);
+                }
+                &--heading {
+                    margin-top: 72px;
+                    line-height: 40px;
+                    font-size: 24px;
+                    font-style: normal;
+                    color: #234361;
+                    text-align: center;
+                    font-weight: bold;
+                    min-width: 830px;
+                }
+                &--paragraph {
+                    line-height: 40px;
+                    font-size: 20px;
+                    max-width: 830px;
+                    margin-top: 24px;
+                    font-style: normal;
+                    color: #425a70;
+                    text-align: center;
+                }
+                &--image {
+                    box-sizing: content-box;
+                    width: 179px;
+                    height: 178px;
+                    border-radius: 50%;
+                    border: 16px solid #f6f9fd;
+                    display: flex;
+                    align-self: center;
+                }
+                &--picture {
+                    display: flex;
+                    font-size: 32px;
+                    margin: 10px 0px;
+                    background-image: url(../assets/img/Speech_cloud.png);
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    background-size: 225px 94.58px;
+                }
+                &--contact {
+                    background-color: #4da8ff;
+                    color: #ffffff;
+                    border-radius: 64px;
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    //styleName: TextBold;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    text-decoration: none;
+                    margin-top: 68px;
+                    padding: 0px 24px 4px 24px;
+                }
+            }
+            &__image--container {
+                display: flex;
+                min-height: 228px;
+                max-width: 403px;
+                margin-right: 177px;
+                margin-left: 402px;
+                margin-top: 1px;
+            }
+        }
+        .link {
+            color: #4da8ff;
+            text-decoration: none;
+        }
     }
-    &__article--paragraph {
-        line-height: 32px;
-        font-size: 16px;
-        font-style: normal;
-        color: #425a70;
-        text-align: center;
-    }
-    &__image {
-        box-sizing: content-box;
-        width: 96px;
-        height: 96px;
-        margin: 98px 112px 40px 112px;
-        border-radius: 50%;
-        border: 16px solid #f6f9fd;
-    }
-    &__image--container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &__picture {
-        display: none;
-    }
-}
-
-.link {
-    color: #4da8ff;
-    text-decoration: none;
-}
