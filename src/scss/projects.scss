@@ -1,66 +1,153 @@
-.projects {
-    padding: 64px 16px 88px 16px;
-    &__heading {
-        color: #234361;
-        font-size: 36px;
-        line-height: 48px;
-        min-width: 288px;
-        font-weight: 700;
-        text-align: center;
+    @media screen and (max-width:1023px) {
+        .projects {
+            padding: 64px 16px 88px 16px;
+            &__heading {
+                color: #234361;
+                font-size: 36px;
+                line-height: 48px;
+                min-width: 288px;
+                font-weight: 700;
+                text-align: center;
+            }
+            &__article {
+                text-align: center;
+                color: #234361;
+                font-size: 16px;
+                line-height: 32px;
+            }
+            &__container {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__title {
+                color: #808082;
+                margin-top: 88px;
+                margin-bottom: 8px;
+                padding-top: 24px;
+                font-size: 13px;
+                line-height: 24px;
+            }
+            &__element {
+                color: #808082;
+                font-size: 13px;
+                line-height: 24px;
+            }
+            &__link {
+                font-size: 13px;
+                line-height: 24px;
+            }
+            &__sticker {
+                background-color: #1e1e1e;
+                height: 40px;
+                min-width: 288px;
+                border-radius: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            &__grid {
+                display: block;
+                background-color: #212528;
+                min-width: 288px;
+                min-height: 320px;
+                border-radius: 16px;
+                position: relative;
+                filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+                margin: 24px 16px 24px 16px;
+                text-align: center;
+            }
+            &__circles {
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                right: 232px;
+            }
+            &__logo {
+                position: absolute;
+                top: 64px;
+                left: 16px;
+                right: 247px;
+            }
+        }
     }
-    &__article {
-        text-align: center;
-        color: #234361;
-        font-size: 16px;
-        line-height: 32px;
+    
+    @media screen and (min-width:1024px) {
+        .projects {
+            margin: 80px 128px 176px 128px;
+            &__heading {
+                color: #234361;
+                font-size: 48px;
+                line-height: 56px;
+                min-width: 288px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            &__article {
+                text-align: center;
+                color: #234361;
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 128px;
+            }
+            &__container {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__title {
+                color: #808082;
+                margin-top: 88px;
+                margin-bottom: 8px;
+                padding-top: 24px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__element {
+                color: #808082;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__link {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__sticker {
+                background-color: #1e1e1e;
+                height: 40px;
+                min-width: 288px;
+                border-radius: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            &__grid {
+                display: block;
+                background-color: #212528;
+                max-width: 580px;
+                min-height: 320px;
+                border-radius: 16px;
+                position: relative;
+                filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+                margin: 24px 16px 24px 16px;
+                text-align: center;
+            }
+            &__circles {
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                right: 232px;
+            }
+            &__logo {
+                position: absolute;
+                top: 64px;
+                left: 48px;
+                right: 247px;
+            }
+        }
     }
-    &__container {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__title {
-        color: #808082;
-        margin-top: 88px;
-        margin-bottom: 8px;
-        padding-top: 24px;
-    }
-    &__element {
-        color: #808082;
-    }
-    &__link {}
-    &__sticker {
-        background-color: #1e1e1e;
-        height: 40px;
-        min-width: 288px;
-        border-radius: 16px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    &__grid {
-        display: block;
-        background-color: #212528;
-        min-width: 288px;
-        min-height: 320px;
-        border-radius: 16px;
-        position: relative;
-        filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
-        margin: 24px 16px 24px 16px;
-        text-align: center;
-    }
-    &__circles {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        right: 232px;
-    }
-    &__logo {
-        position: absolute;
-        top: 64px;
-        left: 16px;
-        right: 247px;
-    }
-}
